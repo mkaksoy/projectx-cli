@@ -1,0 +1,28 @@
+{
+  "name": "projectx-cli",
+  "version": "1.0.0",
+  "description": "A CLI that can be used to create and manage Node.js projects 🔥",
+  "main": "main.js",
+  "scripts": {
+    "start": "node main.js",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/mkaksoy/projectx-cli.git"
+  },
+  "keywords": [
+    "cli",
+    "project-generator",
+    "project-manager"
+  ],
+  "author": "Mehmet Kaan Aksoy",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/mkaksoy/projectx-cli/issues"
+  },
+  "homepage": "https://github.com/mkaksoy/projectx-cli#readme",
+  "devDependencies": {
+    "jest": "latest"
+  }
+}
