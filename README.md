@@ -6,17 +6,18 @@ A CLI that can be used to create and manage Node.js projects 🔥
 
 ### Options:
 
-<div>
-<span style="font-weight: 700;"><span style="color: lightgreen;">mkaksoy@MehmetKaanAksoy</span>:<span style="color: #5291ff;">~/workspace/projectx-cli</span>$ npm install -g projectx</span><br/>
-Added 1 package <br>
-<span style="font-weight: 700;"><span style="color: lightgreen;">mkaksoy@MehmetKaanAksoy</span>:<span style="color: #5291ff;">~/workspace/projectx-cli</span>$ npx projectx</span><br/>
-<span style="font-weight: 600;"><span style="color: #5291ff;">?</span> What is the name of your project? 🎉</span><br/>
-<span style="font-weight: 600;"><span style="color: #5291ff;">?</span> What is the description of your project? 📝</span><br/>
-<span style="font-weight: 600;"><span style="color: #5291ff;">?</span> What is the version of your project? 🔢</span><br/>
-<span style="font-weight: 600;"><span style="color: #5291ff;">?</span> Who is the author of the project? 👤</span><br/>
-<span style="font-weight: 600;"><span style="color: #5291ff;">?</span> What is the license of your project? 📜</span><br/>
-<span style="font-weight: 600;"><span style="color: #5291ff;">?</span> Which module system will you use in your project? 📦</span><br/>
-<span style="font-weight: 600;"><span style="color: #5291ff;">?</span> What are the keywords of your project? 🔑</span><br/>
-<span style="font-weight: 600;"><span style="color: #5291ff;">?</span> Do you want to use Jest? 🤔</span><br/>
-<span style="font-weight: 600;"><span style="color: #5291ff;">?</span> Do you want to initialize a Git repository? 🚀</span>
-</div>
+````bash
+mkaksoy@MehmetKaanAksoy:~/workspace/projectx-cli$ npm install -g projectx
+Added 1 package 
+mkaksoy@MehmetKaanAksoy:~/workspace/projectx-cli$ npx projectx
+? What is the name of your project? 🎉
+? What is the description of your project? 📝
+? What is the version of your project? 🔢
+? Who is the author of the project? 👤
+? What is the license of your project? 📜
+? Which module system will you use in your project? 📦
+? What are the keywords of your project? 🔑
+? Do you want to use Jest? 🤔
+? Do you want to initialize a Git repository? 🚀
+
+````
