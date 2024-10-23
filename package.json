@@ -3,6 +3,10 @@
   "version": "1.0.0",
   "description": "A CLI that can be used to create and manage Node.js projects 🔥",
   "main": "main.js",
+  "type": "module",
+  "bin": {
+    "projectx-generate": "main.js"
+  },
   "scripts": {
     "start": "node main.js",
     "test": "jest"
@@ -23,6 +27,8 @@
   },
   "homepage": "https://github.com/mkaksoy/projectx-cli#readme",
   "devDependencies": {
-    "jest": "latest"
+    "axios": "latest",
+    "jest": "latest",
+    "inquirer": "latest"
   }
 }
