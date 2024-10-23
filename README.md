@@ -1,8 +1,8 @@
-# ProjectX CLI v1.0.1
+# ProjectX CLI v1.0.2
 
 A CLI that can be used to create and manage Node.js projects 🔥
 
-**Usage:** First, download it globally by typing `npm install -g @mkaksoy/projectx`. Then you will be able to create a project by typing `npx projectx`.
+**Usage:** First, download it globally by typing `npm install -g projectx-cli`. Then you will be able to create a project by typing `npx projectx`.
 
 ### Options:
 

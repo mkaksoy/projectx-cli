@@ -7,8 +7,8 @@ import {
   validateVersion,
   validateUrl,
   validateLicense,
-} from "./utils/validate.js";
-import gen from "./utils/generator.js";
+} from "./src/utils/validate.js";
+import gen from "./src/utils/generator.js";
 
 inquirer
   .prompt([

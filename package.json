@@ -1,6 +1,6 @@
 {
-  "name": "@mkaksoy/projectx",
-  "version": "1.1.0",
+  "name": "projectx-cli",
+  "version": "1.2.0",
   "description": "A CLI that can be used to create and manage Node.js projects 🔥",
   "main": "main.js",
   "type": "module",
