@@ -52,6 +52,11 @@ const gen = async (dataToWrite) => {
 
     fs.writeFileSync("package.json", content);
     console.log("package.json created successfully!");
+
+    if (dataToWrite.projectxrc) {
+      fs.writeFileSync(".projectxrc", JSON.stringify(dataToWrite, null, 2));
+      console.log(".projectxrc file created successfully!");
+    }
   };
 
   const createGitignore = () => {
