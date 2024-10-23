@@ -1,4 +1,4 @@
-# ProjectX CLI v1.3.0s
+# ProjectX CLI v1.4.0
 
 A CLI that can be used to create and manage Node.js projects 🔥
 
