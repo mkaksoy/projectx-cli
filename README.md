@@ -19,5 +19,6 @@ mkaksoy@MehmetKaanAksoy:~/workspace/projectx-cli$ npx projectx
 ? What are the keywords of your project? 🔑
 ? Do you want to use Jest? 🤔
 ? Do you want to initialize a Git repository? 🚀
+? Do you want your options to be saved in your .projectxrc file? (recommended) 📇
 
 ```
