@@ -30,9 +30,7 @@ const gen = async (dataToWrite) => {
       }
     });
 
-    const devDependencies = dataToWrite.jest
-      ? { jest: "latest" }
-      : {};
+    const devDependencies = dataToWrite.jest ? { jest: "latest" } : {};
 
     const content = JSON.stringify(
       {
@@ -46,10 +44,10 @@ const gen = async (dataToWrite) => {
         scripts,
         ...isGit(),
         keywords: dataToWrite.keywords,
-        devDependencies
+        devDependencies,
       },
       null,
-      2
+      2,
     );
 
     fs.writeFileSync("package.json", content);

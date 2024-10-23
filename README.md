@@ -6,9 +6,9 @@ A CLI that can be used to create and manage Node.js projects 🔥
 
 ### Options:
 
-````bash
+```bash
 mkaksoy@MehmetKaanAksoy:~/workspace/projectx-cli$ npm install -g projectx
-Added 1 package 
+Added 1 package
 mkaksoy@MehmetKaanAksoy:~/workspace/projectx-cli$ npx projectx
 ? What is the name of your project? 🎉
 ? What is the description of your project? 📝
@@ -20,4 +20,4 @@ mkaksoy@MehmetKaanAksoy:~/workspace/projectx-cli$ npx projectx
 ? Do you want to use Jest? 🤔
 ? Do you want to initialize a Git repository? 🚀
 
-````
+```

@@ -1,7 +1,13 @@
 #!/usr/bin/env node
 
 import inquirer from "inquirer";
-import { validateSemVer, validateUrl } from "./utils/validate.js";
+import {
+  validateName,
+  validateDescription,
+  validateVersion,
+  validateUrl,
+  validateLicense,
+} from "./utils/validate.js";
 import gen from "./utils/generator.js";
 
 inquirer
@@ -11,19 +17,21 @@ inquirer
       name: "name",
       message: "What is the name of your project?",
       default: "",
+      validate: validateName,
     },
     {
       type: "input",
       name: "description",
       message: "What is the description of your project?",
       default: "",
+      validate: validateDescription,
     },
     {
       type: "input",
       name: "version",
       message: "What is the version of your project?",
       default: "1.0.0",
-      validate: validateSemVer,
+      validate: validateVersion,
     },
     {
       type: "input",
@@ -35,6 +43,7 @@ inquirer
       name: "license",
       message: "What is the license of your project?",
       default: "ISC",
+      validate: validateLicense,
     },
     {
       type: "list",
@@ -118,65 +127,8 @@ inquirer
       when: (answers) => answers.src === true,
       default: true,
     },
-    // {
-    //   type: "list",
-    //   name: "template",
-    //   message: "Which template do you want to use?",
-    //   choices: [
-    //     { name: "Basic Node.js (adds no extra dependencies)", value: "basic" },
-    //     {
-    //       name: "Basic Node.js TypeScript (adds typescript and ts-node)",
-    //       value: "basic-ts",
-    //     },
-    //     { name: "Node.js CLI (adds inquirer)", value: "cli" },
-    //     {
-    //       name: "Next.js WEB Project (adds nextjs and other dependencies)",
-    //       value: "nextjs",
-    //     },
-    //     {
-    //       name: "Electron Desktop project (adds electron and other dependencies)",
-    //       value: "electron",
-    //     },
-    //     { name: "WEB API Project (adds axios)", value: "api" },
-    //     { name: "Custom (install dependencies yourself)", value: "custom" },
-    //   ],
-    //   default: "basic",
-    // },
-    // {
-    //   type: "list",
-    //   name: "nextTemplate",
-    //   message: "Which template do you want to use?",
-    //   choices: [
-    //     { name: "Next.js with JavaScript (recommended)", value: "js" },
-    //     {
-    //       name: "Next.js with TypeScript (good for large projects)",
-    //       value: "ts",
-    //     },
-    //   ],
-    //   default: "js",
-    //   when: (answers) => answers.template === "nextjs",
-    // },
-    // {
-    //   type: "checkbox",
-    //   name: "scripts",
-    //   message: "Which code-quality tools do you want?",
-    //   choices: [
-    //     { name: "ESLint (also adds command lint to scripts)", value: "eslint" },
-    //     {
-    //       name: "Prettier (also adds command format to scripts)",
-    //       value: "prettier",
-    //     },
-    //     {
-    //       name: "Husky (also adds command prepare to scripts)",
-    //       value: "husky",
-    //     },
-    //     { name: "lint-staged", value: "lint-staged" },
-    //   ],
-    //   default: ["eslint", "prettier"],
-    // },
   ])
   .then((answers = {}) => {
     answers.keywords = answers.keywords.replace(/\s+/g, "").split(",");
-
     gen(answers);
   });
