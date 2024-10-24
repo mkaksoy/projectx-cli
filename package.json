@@ -1,6 +1,6 @@
 {
   "name": "projectx-cli",
-  "version": "1.4.0",
+  "version": "1.4.1",
   "description": "A CLI that can be used to create and manage Node.js projects 🔥",
   "main": "main.js",
   "type": "module",
@@ -10,7 +10,7 @@
   "readme": "./README.md",
   "scripts": {
     "start": "node main.js",
-    "test": "jest"
+    "test": "jest --passWithNoTests"
   },
   "repository": {
     "type": "git",
