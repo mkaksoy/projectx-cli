@@ -1,4 +1,4 @@
-# ProjectX CLI v1.4.0
+# ProjectX CLI 2.0.0
 
 A CLI that can be used to create and manage Node.js projects 🔥
 
@@ -18,5 +18,6 @@ mkaksoy@MehmetKaanAksoy:~/workspace/projectx-cli$ npx projectx
 ? Do you want to use Jest? 🤔
 ? Do you want to initialize a Git repository? 🚀
 ? Do you want your options to be saved in your .projectxrc file? (recommended) 📇
+? Which project template do you want? 🗂️
 
 ```

@@ -5,8 +5,6 @@ import fs from "fs";
 import path from "path";
 import gen from "./src/utils/generator.js";
 import {
-  validateName,
-  validateDescription,
   validateLicense,
   validateUrl,
   validateVersion,
@@ -28,14 +26,12 @@ if (fs.existsSync(projectXRCPath)) {
         name: "name",
         message: "What is the name of your project?",
         default: "",
-        validate: validateName,
       },
       {
         type: "input",
         name: "description",
         message: "What is the description of your project?",
         default: "",
-        validate: validateDescription,
       },
       {
         type: "input",
@@ -123,6 +119,19 @@ if (fs.existsSync(projectXRCPath)) {
           { name: "Build script (npm run build)", value: "build" },
         ],
         default: [],
+      },
+      {
+        type: "list",
+        name: "template",
+        message: "Which project template do you want?",
+        choices: [
+          { name: "None", value: "none" },
+          { name: "Next.js WEB JSX Application", value: "next-js" },
+          { name: "Next.js WEB TSX Application", value: "next-ts" },
+          { name: "Electron Desktop Application", value: "electron" },
+          { name: "Command Line CLI Application", value: "cli" },
+        ],
+        default: "basic-js",
       },
       {
         type: "confirm",

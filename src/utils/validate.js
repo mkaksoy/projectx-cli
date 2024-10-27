@@ -1,20 +1,8 @@
-export const validateName = (input) => {
-  const urlRegex = /^[a-z0-9\-]+$/;
-  return urlRegex.test(input) || "Please enter a valid URL.";
-};
-
 export const validateVersion = (input) => {
   const semverRegex = /^(\d+\.)?(\d+\.)?(\*|\d+)$/;
   return semverRegex.test(input)
     ? true
     : "Please enter a valid SemVer version. (e.g., 1.0.0)";
-};
-
-export const validateDescription = (input) => {
-  return (
-    (typeof input === "string" && input.trim() !== "") ||
-    "Please enter a valid description."
-  );
 };
 
 export const validateLicense = (input) => {
